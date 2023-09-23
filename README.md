@@ -4,7 +4,7 @@
 - Compatible with all major browsers.
 - Using modernizr to detict if the localstorage is supported by the prowser or not. 
 
-#ToDoList Project Idea
+# ToDoList Project Idea
 It's a functional To-Do application using HTML, CSS, and JavaScript where the user inputs will store on the browser's local storage. To get started we need to create the required HTML, simple UI with CSS, and finally the functionality of the app using JavaScript. After giving the list of your to-do things, you need to check whether the input is stored in your browser’s local storage or not. You can check in this way. Open your project inspect the web page, go to the Applications tab. 
 I can in toDoList project make all crud operations(get, add, update, delete). And save all changes by using LocalStorage that's used locally in the device browser.
 
