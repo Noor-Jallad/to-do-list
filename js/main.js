@@ -74,8 +74,8 @@ function edittask(index){
     let saveTaskBtn = document.getElementById("savetaskbtn");
     saveindex.value = index;
     let webtask = localStorage.getItem("localtask");
-    let taskObj = JSON.parse(webtask); 
-    addTaskInput.value = taskObj[index]['task_name'];
+    let taskObj =JSON.parse(webtask); 
+    addTaskInput.value= taskObj[index]['task_name'];
     addTaskBtn.style.display="none";
     saveTaskBtn.style.display="block";
 }
@@ -90,7 +90,7 @@ saveTaskBtn.addEventListener("click", function(){
     
     for (keys in taskObj[saveindex]) {
         if(keys == 'task_name'){
-            taskObj[saveindex].task_name = addTaskInput.value;
+            taskObj[saveindex].task_name = slugify(addTaskInput.value);
         }
       }
     // taskObj[saveindex] = {'task_name':addTaskInput.value, 'completeStatus':false} ;
