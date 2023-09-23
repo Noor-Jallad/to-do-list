@@ -13,20 +13,13 @@ This to-do app can store the given information in the browser’s local storage 
 # Local Storage
 The localStorage mechanism is available via the Window.localStorage property. Window.localStorage is part of the Window interface in JavaScript, which represents a window containing a DOM document. 
 
-**Table of Contents**
-
-[TOCM]
-
-[TOC]
-
-###Links in html head
+### Links in html head
 [Github Repo Link](https://github.com/Noor-Jallad/ToDoList.git "Github Repo Link")
-
 `<link>` : <https://github.com/Noor-Jallad/ToDoList.git>
 
 
-###Code Blocks (multi-language) & highlighting
-##Meta Statements
+### Code Blocks (multi-language) & highlighting
+## Meta Statements
 ```Meta Statements 
 <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -83,7 +76,7 @@ table tr td button {
     cursor: pointer;
 }
 .completed{text-decoration: line-through;}```
-####Javascript　
+#### Javascript Showing How Using LocalStorage In The Project
 ```javascript
 Modernizr.addTest('localstorage', function(){
     var mod='modernizr';
@@ -271,84 +264,15 @@ searchtextbox.addEventListener("input", function(){
     })
 })```
 
-####HTML code
+### Lists
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Todo List</title>
-  <link rel="stylesheet" href="css/font-awesome.min.css" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.min.css" />
-</head>
-
-<body>
-  <header class="bg-dark mb-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <nav class="navbar justify-content-between">
-            <a class="navbar-brand">Todo List</a>
-            <form class="form-inline">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
-                id="searchtextbox" />
-            </form>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <section class="todo-outer">
-    <div class="container">
-      <div class="row justify-content-md-center">
-        <div class="col-sm-12 col-md-8">
-          <h1>Welcome in Todo List App</h1>
-          <div class="todo-inner">
-            <div class="form-row">
-              <div class="col-8 mr-sm-2">
-                <input type="text" class="form-control" placeholder="Enter your task" id="addtaskinput" />
-                <input type="hidden" id="saveindex">
-              </div>
-              <button type="button" class="btn btn-success mr-sm-2" id="addtaskbtn">
-                Add Task
-              </button>
-              <button type="button" class="btn btn-success mr-sm-2" id="savetaskbtn" style="display: none;">
-                Save Task
-              </button>
-              <button type="button" id="deleteallbtn" class="btn btn-danger">
-                Delete All
-              </button>
-            </div>
-            <div class="to-do-output">
-              <table class="table table-striped mt-3 mb-0" id="addedtasklist">
-                
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
-</html>
-```
-
-###Lists
-
-####Unordered list (-)
+#### Unordered list (-)
 
 - Add Items
 - After Adding Item And Store It In Local Storage
 - I have then the capabiity to edit,delete,deleteAll or clear items(tasks) from both desktop device app and localstorage. 
                          
-###Tables
+### Tables
                     
 Function  | Description
 ------------- | -------------
@@ -368,4 +292,4 @@ key()  | Passed a number to retrieve the key of a localStorage
 |key()  | localStorage.key(index);| 
 
 
-###End
+### End
